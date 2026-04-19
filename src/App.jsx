@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { FaPhp, FaNodeJs, FaDocker, FaGithub, FaDatabase } from "react-icons/fa";
+import { FaPhp, FaNodeJs, FaDocker, FaGithub, FaDatabase, FaLinkedin } from "react-icons/fa";
 import { SiMysql, SiNodered } from "react-icons/si";
 import './App.css'
 
@@ -46,6 +46,10 @@ function App() {
             <a href="https://github.com/Fagner202" target="_blank" style={styles.socialIcon}>
               <FaGithub />
             </a>
+
+            <a href="https://www.linkedin.com/in/fagner-joaquim-ramos-a65914248/" target="_blank" style={styles.socialIcon}>
+              <FaLinkedin />
+            </a>
           </div>
           <p style={styles.text}>Email: fagnersilveira86@gmail.com</p>
         </section>
@@ -56,6 +60,8 @@ function App() {
 
 const styles = {
   container: {
+    // border: "2px solid #38bdf8",
+
     minHeight: "100vh",
     background: "#0f172a",
     display: "flex",
@@ -64,10 +70,12 @@ const styles = {
     padding: "20px",
   },
   card: {
+    // border: "2px solid red",
+
     background: "#111827",
     padding: "40px",
     borderRadius: "16px",
-    maxWidth: "700px",
+    maxWidth: "900px",
     width: "100%",
     boxShadow: "0 10px 30px rgba(0,0,0,0.4)",
   },
