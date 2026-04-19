@@ -1,15 +1,15 @@
 import { useState } from 'react'
-import { FaPhp, FaNodeJs, FaDocker, FaGithub } from "react-icons/fa";
-// import { SiMysql, SiMicrosoftsqlserver, SiNodered } from "react-icons/si";
+import { FaPhp, FaNodeJs, FaDocker, FaGithub, FaDatabase } from "react-icons/fa";
+import { SiMysql, SiNodered } from "react-icons/si";
 import './App.css'
 
 const techIcons = {
   "PHP": <FaPhp />,
   "Node.js": <FaNodeJs />,
-  // "MySQL": <SiMysql />,
-  // "SQL Server": <SiMicrosoftsqlserver />,
+  "MySQL": <SiMysql />,
+  "SQL Server": <FaDatabase />,
   "Docker": <FaDocker />,
-  // "Node-RED": <SiNodered />,
+  "N-RED": <SiNodered />,
 };
 
 function App() {
