@@ -37,7 +37,33 @@ function App() {
 
         <section style={styles.section}>
           <h3 style={styles.subtitle}>Projetos</h3>
-          <p style={styles.text}>Em breve projetos com backend e integrações reais.</p>
+
+          <div style={styles.projectCard}>
+            <h4 style={styles.projectTitle}>Gerador de ASO (Atestado de Saúde Ocupacional)</h4>
+
+            <p style={styles.text}>
+              Sistema completo para gestão e emissão de ASOs, com integração entre frontend e backend,
+              persistência de dados e geração de documentos.
+            </p>
+
+            <div style={styles.projectLinks}>
+              <a
+                href="https://frontend-omega-virid-98.vercel.app/"
+                target="_blank"
+                style={styles.projectLink}
+              >
+                🔗 Acessar projeto em produção
+              </a>
+
+              <a
+                href="https://github.com/Fagner202/frontend"
+                target="_blank"
+                style={styles.projectLink}
+              >
+                💻 Repositório no GitHub
+              </a>
+            </div>
+          </div>
         </section>
 
         <section style={styles.section}>
@@ -128,6 +154,31 @@ const styles = {
   socialIcon: {
     color: "#38bdf8",
     fontSize: "22px",
+  },
+
+  projectCard: {
+    background: "#1f2933",
+    padding: "20px",
+    borderRadius: "12px",
+    marginTop: "10px",
+  },
+
+  projectTitle: {
+    color: "#38bdf8",
+    marginBottom: "10px",
+    fontSize: "18px",
+  },
+
+  projectLinks: {
+    display: "flex",
+    flexDirection: "column",
+    gap: "8px",
+    marginTop: "10px",
+  },
+
+  projectLink: {
+    color: "#38bdf8",
+    textDecoration: "none",
   },
 };
 
